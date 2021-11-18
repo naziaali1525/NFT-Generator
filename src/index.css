@@ -1,13 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.ask-question {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+
+}
+
+.login-form {
+  font-family: 'Montserrat', sans-serif;
+  height: 88vh;
+}
+
+.col {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.side-border {
+  display: flex;
+}
+
+.sign-up {
+  background-color: #26407F !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 21px 54px 82px 0;
+  font-family: 'Montserrat', sans-serif;
+  flex-wrap: wrap;
+
+}
+
+.signin-btn {
+  border-radius: 32px;
+  padding: 0px 12px;
+  margin-left: 12px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), #084298);
+  border: none;
+  padding: 6px 29px;
+  font-size: 12px;
+
+}
+
+.logo{
+  background-image: url('./components/images/Group-872.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 31%;
+  height: 42px;
+}
+
+.border{
+  background-color: #493ED8;
+}
+
+.border {
+  height: 100vh;
+  padding: 38px 30px;
+  color: white;
+
+}
+
+.tag-line {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 24px;
+  margin-top: 19px;
+}
+
+.para {
+  font-size: 14px;
+  margin: 0 0 34px;
+  line-height: 17px;
+}
+
+.art-by {
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 40px;
+}
+
+.image {
+  background-image: url('./components/images/Group-951.png');
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+    .side-border {
+      display: none;
+    }
+
+}
+
+@media screen and (max-width: 400px ) {
+  .login {
+    justify-content: center;
+    margin: 47px 0 61px 0;
+  }
+
+  .ask-question {
+    font-size: 14px;
+  
+  }
+
 }
